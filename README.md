@@ -20,7 +20,7 @@ I learned and got inspired from:
 - [Chai aur Code](https://www.youtube.com/@chaiaurcode)
 - [Code with Scaler](https://www.youtube.com/@ScalerAcademy)
 - [Thapa Technical](https://www.youtube.com/@ThapaTechnical)
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 - HTML5
 - CSS3 (with gradients & shadows)
 - JavaScript (Vanilla)
