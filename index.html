@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Mausam Portal - Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Mausam Portal </h1>
+    <nav>
+      <form>
+        <input type="text" placeholder="Enter Location" class="search_area" />
+        <button type="submit">Search</button>
+      </form>
+</nav>
+    <div class="weather_container">
+      <div class="temp">
+        <p>20°C</p>
+      </div>
+      <div class="time_location">
+        <p>Jodhpur</p>
+        <span>2:56 PM - Monday 2025-07-05</span>
+      </div>
+      <div class="condition">
+        <img class="icon" src="" alt="Weather Icon" />
+        <p>Clear Sky</p>
+      </div>
+    </div>
+  </div>
+  <video autoplay muted loop id="bgVideo" class="background-video">
+    <source src="videos/default.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <script src="script.js"></script>
+</body>
+</html>

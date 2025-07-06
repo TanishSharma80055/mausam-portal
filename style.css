@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e1e2f, #2a2a40);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+nav form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.search_area {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 260px;
+  background-color: #3d3d50;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search_area::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.search_area:focus {
+  background-color: #4a4a60;
+  box-shadow: 0 0 0 2px #7fffd4;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(to right, #7fffd4, #1abc9c);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #66ffcc, #16a085);
+  transform: scale(1.05);
+}
+
+.weather_container {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.weather_container:hover {
+  transform: translateY(-5px);
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.time_location {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.time_location span {
+  display: block;
+  font-size: 0.95rem;
+  color: #dcdcdc;
+  margin-top: 0.3rem;
+}
+
+.condition {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #7fffd4;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .temp {
+    font-size: 3rem;
+  }
+
+  .search_area,
+  button {
+    width: 100%;
+  }
+
+  .weather_container {
+    padding: 1.5rem;
+  }
+}
