@@ -30,13 +30,13 @@ I learned and got inspired from:
 
 ## 📦 How to Use
 1. Clone this repo  
-2. Add your own OpenWeatherMap API key in `script.js`
+2. Add your own WeatherAPI key in `script.js`
 3. Open `index.html` in your browser 
 
 ---
 
 ## 📬 Contact
 Want to connect or give feedback?  
-Reach out on [LinkedIn]www.linkedin.com/in/tanish-sharma-b9905029a or open an issue here.
+Reach out on www.linkedin.com/in/tanish-sharma-b9905029a or open an issue here.
 
 ---
